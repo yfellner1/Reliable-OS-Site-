@@ -191,16 +191,46 @@ STATS = '''        <div class="stats">
         </div>
 '''
 
-TESTIMONIAL = '''    <section class="testimonial">
-      <div class="container narrow center reveal">
-        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote>
-          <p>“I can’t say enough about this service. Being a small business in the COVID era, we had to look for more affordable ways to maintain an office staff. Reliable’s staff treated me as if they were ‘in-house.’ I was shocked at how smooth the transition was for my business!”</p>
-          <footer><strong>Dr. Daniel Yousefzadeh</strong><span>Zada Rehab</span></footer>
-        </blockquote>
+TESTIMONIALS = [
+    ("Nathan Lederer", "Whole Team Therapy", "tint-cyan",
+     ["We’ve been a client of Reliable Office Services for well over four and a half years. It’s been a phenomenal relationship. They’ve helped our business grow, and we look forward to working with them for many more years in the future."]),
+    ("Optical Eyeland", "Manager, Jackson location", "tint-lime",
+     ["As the manager at Optical Eyeland in the Jackson location, we’ve been a client of Reliable Office Services for over three years now.",
+      "We get a lot of phone calls and emails, and they answer everything very professionally and in a timely fashion. We would definitely recommend them to anyone who could benefit from their services."]),
+    ("Kalamata", "Client for over 2 years", "tint-peach",
+     ["We’ve been using Reliable Office Services for over 2 years already. It’s amazing. It’s taken so much off my head, and I’ve been able to focus on my business so much more.",
+      "It’s so organized and reliable, and I know that my customers have a place to call where they’ll be answered and taken care of. It’s really, really, really boosted our business.",
+      "We really appreciate Yitzi and his staff. They’re absolutely amazing."]),
+    ("Dr. Daniel Yousefzadeh", "Zada Rehab", "tint-lav",
+     ["I can’t say enough about this service. Being a small business in the COVID era, we had to look for more affordable ways to maintain an office staff. Reliable’s staff treated me as if they were “in-house.” I was shocked at how smooth the transition was for my business!"]),
+]
+
+
+def testimonials():
+    cards = ""
+    for name, sub, tint, paras in TESTIMONIALS:
+        initials = "".join(w[0] for w in name.replace("Dr. ", "").split()[:2]).upper()
+        body = "".join(f"<p>{t}</p>" for t in paras)
+        cards += f"""          <figure class="t-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>{body}</blockquote>
+            <figcaption><span class="avatar {tint}" aria-hidden="true">{initials}</span><span><strong>{name}</strong><small>{sub}</small></span></figcaption>
+          </figure>
+"""
+    return f"""    <section class="testimonial" id="testimonials">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">What our clients say</p>
+          <h2>Business owners who got their time back</h2>
+        </div>
+        <div class="t-grid">
+{cards}        </div>
       </div>
     </section>
-'''
+"""
+
+
+TESTIMONIAL = testimonials()
 
 CTA = f'''    <section class="cta-band">
       <div class="ring ring-d" aria-hidden="true"></div>
