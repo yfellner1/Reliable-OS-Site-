@@ -10,13 +10,13 @@
   var header = document.querySelector('.site-header');
   var bar = document.querySelector('.progress span');
   var mobileCall = document.querySelector('.mobile-call');
-  var hero = document.querySelector('.hero');
+  var hero = document.querySelector('.hero, .page-hero');
   function onScroll() {
     var st = window.scrollY;
     header.classList.toggle('scrolled', st > 8);
     var max = document.documentElement.scrollHeight - window.innerHeight;
     bar.style.transform = 'scaleX(' + (max > 0 ? st / max : 0) + ')';
-    if (mobileCall) mobileCall.classList.toggle('show', st > hero.offsetHeight * 0.6);
+    if (mobileCall) mobileCall.classList.toggle('show', st > (hero ? hero.offsetHeight * 0.6 : 200));
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -36,21 +36,6 @@
   });
   nav.addEventListener('click', function (e) { if (e.target.closest('a')) closeNav(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeNav(); });
-
-  // Active nav link
-  var links = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]:not(.btn)'));
-  if ('IntersectionObserver' in window) {
-    var secObs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (!en.isIntersecting) return;
-        links.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id); });
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    links.forEach(function (l) {
-      var s = document.querySelector(l.getAttribute('href'));
-      if (s) secObs.observe(s);
-    });
-  }
 
   // Reveal on scroll (staggered among siblings) + count-up numbers
   function countUp(el) {
@@ -180,16 +165,15 @@
     });
   });
 
-  // Plan buttons preselect services in the form
   var form = document.getElementById('contact-form');
-  document.querySelectorAll('[data-plan]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      var plan = a.getAttribute('data-plan');
-      var msg = form.querySelector('#message');
-      if (!msg.value.trim()) msg.value = 'I’m interested in the ' + plan + ' package.';
-      if (/All 4/.test(plan)) form.querySelectorAll('input[name=service]').forEach(function (c) { c.checked = true; });
-    });
-  });
+  if (!form) return;
+
+  // Arriving from a package button (contact.html#pkg-1 / #pkg-2 / #pkg-4)
+  var pkg = { '#pkg-1': 'one-service', '#pkg-2': 'two-service', '#pkg-4': 'all-four-services' }[location.hash];
+  if (pkg) {
+    form.querySelector('#message').value = 'I’d like a quote for the ' + pkg + ' package.';
+    if (location.hash === '#pkg-4') form.querySelectorAll('input[name=service]').forEach(function (c) { c.checked = true; });
+  }
 
   // Contact form — posts to the same endpoint the previous site used
   var ENDPOINT = 'https://tpyd329og7.execute-api.us-east-1.amazonaws.com/production/submit';
