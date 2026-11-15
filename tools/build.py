@@ -197,7 +197,7 @@ TESTIMONIALS = [
     ("Optical Eyeland", "Manager, Jackson location", "tint-lime",
      ["As the manager at Optical Eyeland in the Jackson location, we’ve been a client of Reliable Office Services for over three years now.",
       "We get a lot of phone calls and emails, and they answer everything very professionally and in a timely fashion. We would definitely recommend them to anyone who could benefit from their services."]),
-    ("Kalamata", "Client for over 2 years", "tint-peach",
+    ("Eli", "Kalamata", "tint-peach",
      ["We’ve been using Reliable Office Services for over 2 years already. It’s amazing. It’s taken so much off my head, and I’ve been able to focus on my business so much more.",
       "It’s so organized and reliable, and I know that my customers have a place to call where they’ll be answered and taken care of. It’s really, really, really boosted our business.",
       "We really appreciate Yitzi and his staff. They’re absolutely amazing."]),
