@@ -310,9 +310,10 @@ section { padding: 104px 0; position: relative; }
 .about { background: var(--t-cyan); }
 .about-grid { display: grid; grid-template-columns: 320px 1fr; gap: 64px; align-items: center; }
 .about-photo { position: relative; }
-.about-photo::before { content: ""; position: absolute; inset: 8% -6% -4% 6%; border-radius: 36px; background: var(--lime-bright); transform: rotate(-4deg); }
-.about-photo img { position: relative; max-width: 300px; margin: 0 auto; transition: transform .4s var(--bounce); }
-.about-photo:hover img { transform: rotate(2deg) scale(1.03); }
+.about-photo { max-width: 300px; margin: 0 auto; }
+.about-photo::before { content: ""; position: absolute; inset: -14px; border-radius: 50%; border: 10px solid var(--lime-bright); border-right-color: var(--cyan); border-bottom-color: var(--navy); animation: spin 14s linear infinite; }
+.about-photo img { position: relative; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 8px solid #fff; box-shadow: var(--shadow-lg); transition: transform .4s var(--bounce); }
+.about-photo:hover img { transform: scale(1.04) rotate(-2deg); }
 .ceo-quote { margin: 0; font-size: 1.08rem; }
 .ceo-quote footer, .testimonial footer { margin-top: 20px; display: flex; flex-direction: column; line-height: 1.4; }
 .ceo-quote footer strong { color: var(--ink); font-size: 1.1rem; }
