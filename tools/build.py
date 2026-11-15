@@ -194,6 +194,8 @@ STATS = '''        <div class="stats">
 TESTIMONIALS = [
     ("Nathan Lederer", "Whole Team Therapy", "tint-cyan",
      ["We’ve been a client of Reliable Office Services for well over four and a half years. It’s been a phenomenal relationship. They’ve helped our business grow, and we look forward to working with them for many more years in the future."]),
+    ("Dr. Daniel Yousefzadeh", "Zada Rehab", "tint-lav",
+     ["I can’t say enough about this service. Being a small business in the COVID era, we had to look for more affordable ways to maintain an office staff. Reliable’s staff treated me as if they were “in-house.” I was shocked at how smooth the transition was for my business!"]),
     ("Optical Eyeland", "Manager, Jackson location", "tint-lime",
      ["As the manager at Optical Eyeland in the Jackson location, we’ve been a client of Reliable Office Services for over three years now.",
       "We get a lot of phone calls and emails, and they answer everything very professionally and in a timely fashion. We would definitely recommend them to anyone who could benefit from their services."]),
@@ -201,8 +203,6 @@ TESTIMONIALS = [
      ["We’ve been using Reliable Office Services for over 2 years already. It’s amazing. It’s taken so much off my head, and I’ve been able to focus on my business so much more.",
       "It’s so organized and reliable, and I know that my customers have a place to call where they’ll be answered and taken care of. It’s really, really, really boosted our business.",
       "We really appreciate Yitzi and his staff. They’re absolutely amazing."]),
-    ("Dr. Daniel Yousefzadeh", "Zada Rehab", "tint-lav",
-     ["I can’t say enough about this service. Being a small business in the COVID era, we had to look for more affordable ways to maintain an office staff. Reliable’s staff treated me as if they were “in-house.” I was shocked at how smooth the transition was for my business!"]),
 ]
 
 
@@ -476,7 +476,7 @@ SERVICES_PAGE = (
 ABOUT_PAGE = (
     page_hero("About us", "A whole local team behind your business.",
               "Since 2020 we’ve helped small businesses stay organized and keep their customers happy, from our office in Lakewood, NJ.",
-              "customer-service", "Waving mascot wearing a headset", "Nice to meet you! 😊")
+              "scheduling", "Smiling calendar mascot holding a pen", "Nice to meet you! ✅")
     + f'''
     <section class="about" id="founder">
       <div class="container about-grid">
@@ -530,7 +530,7 @@ ABOUT_PAGE = (
 FAQ_PAGE = (
     page_hero("FAQ", "Frequently asked questions",
               f"Quick answers about how we work. Don’t see yours? Call us at <a href=\"tel:{TEL}\">{PHONE}</a>.",
-              "scheduling", "Smiling calendar mascot holding a pen", "Good question! ✅")
+              "customer-service", "Waving mascot wearing a headset", "Good question! 😊")
     + '''
     <section class="faq" id="faq">
       <div class="container narrow">

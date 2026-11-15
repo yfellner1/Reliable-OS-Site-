@@ -164,7 +164,7 @@ section { padding: 104px 0; position: relative; }
 @keyframes morph { 50% { border-radius: 56% 44% 44% 56% / 44% 56% 44% 56%; } }
 @keyframes pop { from { transform: scale(.6); opacity: 0; } }
 .hero-mascots { position: relative; z-index: 1; animation: pop 1s .3s var(--bounce) both; }
-.hero-mascots img { animation: float 5s ease-in-out infinite; filter: drop-shadow(0 24px 30px rgba(22, 34, 79, .22)); }
+.hero-mascots img { filter: drop-shadow(0 24px 30px rgba(22, 34, 79, .22)); }
 @keyframes float { 50% { transform: translateY(-14px); } }
 .float-card {
   position: absolute; z-index: 2; background: #fff; border-radius: 16px; box-shadow: var(--shadow-lg);
@@ -321,11 +321,11 @@ section { padding: 104px 0; position: relative; }
 
 /* Testimonials */
 .testimonial { padding: 96px 0; }
-.t-grid { columns: 2; column-gap: 26px; }
-.t-card { break-inside: avoid; margin: 0 0 26px; background: #fff; border: 1.5px solid var(--border); border-radius: 26px; padding: 30px 32px; box-shadow: var(--shadow); transition: transform .35s var(--bounce), box-shadow .3s, border-color .3s, opacity .7s var(--ease); }
+.t-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.t-card { display: flex; flex-direction: column; margin: 0; background: #fff; border: 1.5px solid var(--border); border-radius: 26px; padding: 30px 32px; box-shadow: var(--shadow); transition: transform .35s var(--bounce), box-shadow .3s, border-color .3s, opacity .7s var(--ease); }
 .t-card:hover { transform: translateY(-6px) rotate(-.4deg); box-shadow: var(--shadow-lg); border-color: var(--cyan); }
 .stars { color: #f5b400; font-size: 1.15rem; letter-spacing: 3px; margin-bottom: 12px; }
-.t-card blockquote { margin: 0; color: var(--ink); font-size: 1.04rem; }
+.t-card blockquote { margin: 0; flex: 1; color: var(--ink); font-size: 1.04rem; }
 .t-card blockquote p:first-child::before { content: "“"; }
 .t-card blockquote p:last-child::after { content: "”"; }
 .t-card blockquote p:last-child { margin-bottom: 0; }
@@ -333,7 +333,7 @@ section { padding: 104px 0; position: relative; }
 .t-card figcaption strong { display: block; color: var(--navy); }
 .t-card figcaption small { color: var(--muted); font-size: .88rem; }
 .avatar { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: var(--navy); flex: none; }
-@media (max-width: 900px) { .t-grid { columns: 1; } }
+@media (max-width: 900px) { .t-grid { grid-template-columns: 1fr; } }
 
 /* FAQ */
 .faq { background: #fff; }
@@ -363,7 +363,7 @@ section { padding: 104px 0; position: relative; }
 .c-line:hover { transform: translateX(6px); }
 .c-ico { width: 46px; height: 46px; border-radius: 50%; background: var(--lime-bright); color: var(--ink); display: grid; place-items: center; flex: none; }
 .c-ico svg { width: 20px; height: 20px; fill: currentColor; }
-.contact-mascots { width: 340px; margin-top: 24px; animation: float 6s ease-in-out infinite; }
+.contact-mascots { width: 340px; margin-top: 24px; }
 .contact-form { background: #fff; border-radius: 26px; padding: 36px; box-shadow: var(--shadow-lg); color: var(--text); }
 .chips { border: 0; padding: 0; margin: 0 0 22px; display: flex; flex-wrap: wrap; gap: 10px; min-width: 0; }
 .chips legend { font-weight: 600; color: var(--ink); font-size: .92rem; margin-bottom: 10px; padding: 0; }
@@ -434,7 +434,7 @@ section { padding: 104px 0; position: relative; }
 .cta-band { background: linear-gradient(140deg, var(--navy) 0%, var(--navy-deep) 100%); color: #d4daf2; overflow: hidden; padding: 88px 0; }
 .cta-band h2 { color: #fff; }
 .cta-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; }
-.cta-mascots { animation: float 6s ease-in-out infinite; max-width: 420px; justify-self: center; width: 100%; }
+.cta-mascots { max-width: 420px; justify-self: center; width: 100%; }
 .hero-ctas.static { opacity: 1; transform: none; animation: none; margin-bottom: 0; }
 .btn-outline-light { border-color: rgba(255, 255, 255, .6); color: #fff; }
 .btn-outline-light:hover { background: #fff; color: var(--navy); }
