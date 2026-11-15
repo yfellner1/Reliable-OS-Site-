@@ -19,7 +19,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 ```
 
 ## Deploy
-Upload the whole folder to any static host.
+Hosted on Vercel (project `reliable-os-site`). Every push to the main branch deploys automatically.
 
 The contact form posts JSON (`full_name`, `email`, `subject`, `message`) to the same
 endpoint the previous site used — see `ENDPOINT` in `js/main.js`.
