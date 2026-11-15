@@ -393,7 +393,7 @@ HOME = f'''    <section class="hero">
             <h2>Our mission is to help you run efficiently and keep your customers happy.</h2>
           </div>
           <ul class="benefits">
-            <li class="reveal tint-cyan"><span class="b-dot"></span>More organized work</li>
+            <li class="reveal tint-cyan"><span class="b-dot"></span>Work that stays organized</li>
             <li class="reveal tint-peach"><span class="b-dot"></span>Warm, personal service</li>
             <li class="reveal tint-lav"><span class="b-dot"></span>More peace of mind</li>
           </ul>
@@ -503,7 +503,7 @@ ABOUT_PAGE = (
             <h2>Our mission is to help you run efficiently and keep your customers happy.</h2>
           </div>
           <ul class="benefits">
-            <li class="reveal tint-cyan"><span class="b-dot"></span>More organized work</li>
+            <li class="reveal tint-cyan"><span class="b-dot"></span>Work that stays organized</li>
             <li class="reveal tint-peach"><span class="b-dot"></span>Warm, personal service</li>
             <li class="reveal tint-lav"><span class="b-dot"></span>More peace of mind</li>
           </ul>

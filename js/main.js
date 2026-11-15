@@ -2,6 +2,14 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
+  // Always open a page at the top (unless the link points to a section)
+  if (!location.hash) {
+    try { history.scrollRestoration = 'manual'; } catch (e) {}
+    var toTop = function () { window.scrollTo(0, 0); };
+    toTop();
+    window.addEventListener('pageshow', toTop);
+  }
+
   // Footer year
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
