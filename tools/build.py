@@ -87,7 +87,7 @@ FOOTER = f'''  </main>
     <div class="container footer-inner">
       <div>
         <img src="images/logo.png" alt="Reliable Office Services" width="490" height="169" loading="lazy" class="footer-logo">
-        <p class="footer-tag">Your business. Our support.<br>A local team in Lakewood, NJ.</p>
+        <p class="footer-tag">Your business. Our support.<br>Based out of Lakewood, NJ.</p>
       </div>
       <nav aria-label="Footer">
         <a href="index.html">Home</a>
@@ -282,7 +282,7 @@ ROLES = '''        <div class="roles">
 LOCAL_BADGE = '''          <div class="local-badge reveal" aria-hidden="true">
             <svg viewBox="0 0 200 200">
               <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
-              <text><textPath href="#circ" textLength="486" lengthAdjust="spacing">100% LOCAL • LAKEWOOD, NJ • NOTHING OVERSEAS •</textPath></text>
+              <text><textPath href="#circ" textLength="486" lengthAdjust="spacing">BASED OUT OF LAKEWOOD, NJ • NOTHING OVERSEAS •</textPath></text>
             </svg>
             <span class="pin">📍</span>
           </div>
@@ -331,7 +331,6 @@ HOME = f'''    <section class="hero">
       <span class="bubble b3" aria-hidden="true"></span>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="pill-tag"><span class="live-dot"></span> Helping businesses since 2020</p>
           <h1><span class="line">Your business.</span> <span class="line accent">Our support.</span></h1>
           <p class="lead">Four services. One experienced <strong>local</strong> team. We answer your calls, manage your calendar, take care of your customers and handle the admin, so you get <strong>more time for what matters</strong>.</p>
           <div class="hero-ctas">
@@ -349,8 +348,8 @@ HOME = f'''    <section class="hero">
           <button class="mascot-btn hero-mascots" type="button" data-say="Hi there! We’re the Reliable crew 👋" aria-label="Say hi to the Reliable mascots">
             <img src="images/mascots/group.png" alt="The Reliable mascots: a desk phone, a calendar, a headset and a computer, smiling and giving a thumbs up" width="1000" height="719">
           </button>
-          <div class="float-card fc-1"><span>Starting at</span><strong>$1,800 / month</strong></div>
-          <div class="float-card fc-2"><span class="flag" aria-hidden="true">📍</span><div><strong>Lakewood, NJ</strong><span>Nothing done overseas</span></div></div>
+          <div class="float-card fc-1"><strong>Helping businesses</strong><span>since 2020</span></div>
+          <div class="float-card fc-2"><span class="flag" aria-hidden="true">📍</span><div><span>Based out of</span><strong>Lakewood, NJ</strong></div></div>
         </div>
       </div>
     </section>
@@ -389,7 +388,7 @@ HOME = f'''    <section class="hero">
         <div class="team-head">
           <div class="reveal">
             <p class="eyebrow light">A whole local team behind your business</p>
-            <h2>Real people in Lakewood, NJ. <span class="hl-lime">Nothing done overseas.</span></h2>
+            <h2>Real people, based out of Lakewood, NJ. <span class="hl-lime">Nothing done overseas.</span></h2>
             <p class="team-lead">We’re not a call center. All of our staff work from our Lakewood, NJ office, and you get a personal rep assigned to your account.</p>
             <p class="team-cta"><a href="about.html" class="btn btn-lime">Meet the team <span class="arrow" aria-hidden="true">→</span></a></p>
           </div>
@@ -457,8 +456,9 @@ ABOUT_PAGE = (
         <div class="reveal">
           <p class="eyebrow">A message from our founder</p>
           <blockquote class="ceo-quote">
-            <p>As a manager of customer service for many years, I know what a huge impact it can have on a company. Customer satisfaction breeds continuous business, but it can be difficult to serve your clients on demand when you can’t afford a full staff.</p>
-            <p>I created Reliable Office Services so business owners can focus on their profession while we keep their clients happy. Whether a customer is calling to book an appointment or has a question about pricing, there will be a friendly, local voice to help.</p>
+            <p>As a business owner, I know how hard it can be to give everyone your attention when you’re being pulled in every direction. Every call matters, every customer deserves a thoughtful response, and the everyday office work doesn’t stop just because you’re busy.</p>
+            <p>I founded Reliable Office Services in 2020 to give business owners dependable support and the breathing room to focus on what they do best. Our team, based right here in Lakewood, New Jersey, takes the time to learn your business, understand your customers, and work alongside you—as if we’re sitting in the room next door.</p>
+            <p>Whether we’re answering calls, managing schedules, or keeping up with the details behind the scenes, we take pride in representing your business with care. My goal is simple: to help you feel confident that your office is in good hands, so you have more time to grow your business and enjoy what matters most.</p>
             <footer><strong>Yitzi Fellner</strong><span>Founder &amp; CEO</span></footer>
           </blockquote>
         </div>
@@ -487,7 +487,7 @@ ABOUT_PAGE = (
         <div class="team-head">
           <div class="reveal">
             <p class="eyebrow light">Who you’ll work with</p>
-            <h2>Real people in Lakewood, NJ. <span class="hl-lime">Nothing done overseas.</span></h2>
+            <h2>Real people, based out of Lakewood, NJ. <span class="hl-lime">Nothing done overseas.</span></h2>
             <p class="team-lead">We’re not a call center. All of our staff work from our Lakewood, NJ office, and you get a personal rep assigned to your account. We’d love for you to come down and meet them.</p>
           </div>
 {LOCAL_BADGE}        </div>

@@ -437,7 +437,7 @@ section { padding: 104px 0; position: relative; }
 .faq .faq-list { max-width: 820px; margin: 0 auto; }
 .faq { padding-top: 24px; }
 .footer-contact span { color: var(--muted); font-size: .9rem; }
-.fc-1 span { order: -1; }
+.fc-2 strong { font-size: 1.05rem; }
 
 @media (max-width: 900px) {
   .page-hero { padding: 36px 0 48px; }
