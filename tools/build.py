@@ -108,6 +108,9 @@ FOOTER = f'''  </main>
   <a href="tel:{TEL}" class="mobile-call" aria-label="Call Reliable Office Services">{PHONE_SVG} Call now</a>
 
   <script src="js/main.js" defer></script>
+  <!-- Vercel Web Analytics (cookie-free visitor statistics) -->
+  <script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 '''
