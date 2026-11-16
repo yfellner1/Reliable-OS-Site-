@@ -87,7 +87,7 @@ FOOTER = f'''  </main>
     <div class="container footer-inner">
       <div>
         <img src="images/logo.png" alt="Reliable Office Services" width="490" height="169" loading="lazy" class="footer-logo">
-        <p class="footer-tag">Your business. Our support.<br>Based out of Lakewood, NJ.</p>
+        <p class="footer-tag">Your business. Our support.<br>Serving companies nationwide from Lakewood, NJ.</p>
       </div>
       <nav aria-label="Footer">
         <a href="index.html">Home</a>
@@ -130,7 +130,7 @@ def page_hero(eyebrow, title, sub, mascot, alt="", say="Hi there! 👋"):
 '''
 
 
-MARQUEE_ITEMS = ["Month to month", "No commitment required", "All staff in our Lakewood, NJ office",
+MARQUEE_ITEMS = ["Month to month", "No commitment required", "Serving companies nationwide", "All staff in our Lakewood, NJ office",
                  "Nothing outsourced overseas", "A dedicated rep who knows your business", "We work in your software"]
 
 
@@ -237,7 +237,7 @@ CTA = f'''    <section class="cta-band">
       <div class="container cta-grid">
         <div class="reveal">
           <p class="eyebrow light">Let’s make room for what matters</p>
-          <h2>What would you take off your plate first?</h2>
+          <h2>What can we take off your plate first?</h2>
           <p>Month to month. No commitment. A local team that’s ready when you are.</p>
           <div class="hero-ctas static">
             <a href="contact.html" class="btn btn-lime">Get Started <span class="arrow" aria-hidden="true">→</span></a>
@@ -371,7 +371,7 @@ HOME = f'''    <section class="hero">
           <ul class="promise">
             <li><span class="chk" aria-hidden="true"></span>Month to month</li>
             <li><span class="chk" aria-hidden="true"></span>No commitment</li>
-            <li><span class="chk" aria-hidden="true"></span>100% local team</li>
+            <li><span class="chk" aria-hidden="true"></span>Serving companies nationwide</li>
           </ul>
         </div>
         <div class="hero-art">
@@ -380,7 +380,7 @@ HOME = f'''    <section class="hero">
             <img src="images/mascots/group.png" alt="The Reliable mascots: a desk phone, a calendar, a headset and a computer, smiling and giving a thumbs up" width="1000" height="719">
           </button>
           <div class="float-card fc-1"><strong>Helping businesses</strong><span>since 2020</span></div>
-          <div class="float-card fc-2"><span class="flag" aria-hidden="true">📍</span><div><span>Based out of</span><strong>Lakewood, NJ</strong></div></div>
+          <div class="float-card fc-2"><span class="flag" aria-hidden="true">📍</span><div><strong>Serving companies nationwide</strong><span>Based out of Lakewood, NJ</span></div></div>
         </div>
       </div>
     </section>
@@ -420,7 +420,7 @@ HOME = f'''    <section class="hero">
           <div class="reveal">
             <p class="eyebrow light">A whole local team behind your business</p>
             <h2>Real people, based out of Lakewood, NJ. <span class="hl-lime">Nothing done overseas.</span></h2>
-            <p class="team-lead">We’re not a call center. All of our staff work from our Lakewood, NJ office, and you get a personal rep assigned to your account.</p>
+            <p class="team-lead">We’re not a call center. All of our staff work from our Lakewood, NJ office, and you get a personal rep assigned to your account. We serve companies nationwide.</p>
             <p class="team-cta"><a href="about.html" class="btn btn-lime">Meet the team <span class="arrow" aria-hidden="true">→</span></a></p>
           </div>
 {LOCAL_BADGE}        </div>
@@ -519,7 +519,7 @@ ABOUT_PAGE = (
           <div class="reveal">
             <p class="eyebrow light">Who you’ll work with</p>
             <h2>Real people, based out of Lakewood, NJ. <span class="hl-lime">Nothing done overseas.</span></h2>
-            <p class="team-lead">We’re not a call center. All of our staff work from our Lakewood, NJ office, and you get a personal rep assigned to your account. We’d love for you to come down and meet them.</p>
+            <p class="team-lead">We’re not a call center. All of our staff work from our Lakewood, NJ office, and you get a personal rep assigned to your account. We serve companies nationwide. We’d love for you to come down and meet them.</p>
           </div>
 {LOCAL_BADGE}        </div>
 {ROLES}{COMPARE}      </div>
@@ -553,7 +553,7 @@ CONTACT_PAGE = f'''    <section class="contact" id="contact">
       <div class="container contact-grid">
         <div class="contact-copy">
           <p class="eyebrow light">Let’s make room for what matters</p>
-          <h1>What would you take off your plate first?</h1>
+          <h1>What can we take off your plate first?</h1>
           <p>Tell us a little about your business. We’ll walk you through how it works and put together a custom quote, with no pressure and no commitment.</p>
           <div class="contact-lines">
             <a href="tel:{TEL}" class="c-line"><span class="c-ico">{PHONE_SVG}</span>{PHONE}</a>
@@ -577,6 +577,10 @@ CONTACT_PAGE = f'''    <section class="contact" id="contact">
           <div class="field">
             <label for="email">Email address <span aria-hidden="true">*</span></label>
             <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Best number to reach you">
           </div>
           <div class="field">
             <label for="subject">Business name</label>

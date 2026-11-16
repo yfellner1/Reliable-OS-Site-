@@ -212,8 +212,11 @@
       full_name: form.full_name.value.trim(),
       email: form.email.value.trim(),
       subject: [business, services.length ? 'Interested in: ' + services.join(', ') : ''].filter(Boolean).join(' | '),
+      phone: form.phone.value.trim(),
       message: form.message.value.trim()
     };
+    // The inbox email is built from the message, so include the phone number there too
+    if (data.phone) data.message += '\n\nPhone: ' + data.phone;
 
     var btn = form.querySelector('button[type=submit]');
     btn.disabled = true;
