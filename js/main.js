@@ -177,7 +177,7 @@
   if (!form) return;
 
   // Arriving from a package button (contact.html#pkg-1 / #pkg-2 / #pkg-4)
-  var pkg = { '#pkg-1': 'one-service', '#pkg-2': 'two-service', '#pkg-4': 'all-four-services' }[location.hash];
+  var pkg = { '#pkg-1': 'Starter (one service)', '#pkg-2': 'Basic (two services)', '#pkg-4': 'Premium (all four services)' }[location.hash];
   if (pkg) {
     form.querySelector('#message').value = 'I’d like a quote for the ' + pkg + ' package.';
     if (location.hash === '#pkg-4') form.querySelectorAll('input[name=service]').forEach(function (c) { c.checked = true; });

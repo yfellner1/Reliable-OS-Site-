@@ -428,7 +428,9 @@ section { padding: 104px 0; position: relative; }
 .nc-price { display: grid; text-align: center; line-height: 1.15; padding-right: 22px; border-right: 2px solid rgba(22, 34, 79, .15); flex: none; }
 .nc-price span { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
 .nc-price strong { font-size: 2.3rem; font-weight: 800; color: var(--navy); }
-.plan .plan-desc { font-size: 1.1rem; min-height: 3.2em; }
+.plan-name { font-size: 1.15rem; }
+.plan-count { font-size: 1.6rem; font-weight: 700; color: var(--navy); margin: 0 0 .4em; }
+.plan .plan-desc { font-size: 1rem; font-weight: 400; color: var(--text); min-height: 3.2em; }
 
 /* CTA band */
 .cta-band { background: linear-gradient(140deg, var(--navy) 0%, var(--navy-deep) 100%); color: #d4daf2; overflow: hidden; padding: 88px 0; }

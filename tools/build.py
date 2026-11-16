@@ -250,18 +250,19 @@ CTA = f'''    <section class="cta-band">
 '''
 
 PACKAGES = [
-    ("p-cyan", "One service", "", "Start with the one thing you most want off your plate.", "pkg-1"),
-    ("p-lime", "Two services", " featured", "Pair any two services, handled by the same team.", "pkg-2"),
-    ("p-lav", "All four services", "", "Reception, scheduling, customer service and data entry in one package.", "pkg-4"),
+    ("p-cyan", "Starter", "One service", "", "Start with the one thing you most want off your plate.", "pkg-1"),
+    ("p-lime", "Basic", "Two services", " featured", "Pair any two services, handled by the same team.", "pkg-2"),
+    ("p-lav", "Premium", "All four services", "", "Reception, scheduling, customer service and data entry in one package.", "pkg-4"),
 ]
 
 
 def packages(heading_tag="h2"):
     cards = ""
-    for cls, name, feat, desc, anchor in PACKAGES:
+    for cls, name, count, feat, desc, anchor in PACKAGES:
         btn = "btn-primary" if feat else "btn-ghost"
         cards += f'''          <article class="plan{feat} reveal tilt">
             <p class="plan-name {cls}">{name}</p>
+            <h3 class="plan-count">{count}</h3>
             <p class="plan-desc">{desc}</p>
             <ul class="plan-list">
               <li>Customized to your business</li>
