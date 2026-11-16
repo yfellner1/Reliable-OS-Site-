@@ -482,7 +482,7 @@ ABOUT_PAGE = (
     <section class="about" id="founder">
       <div class="container about-grid">
         <div class="about-photo reveal">
-          <img src="images/yitzi.webp" alt="Yitzi Fellner, Founder and CEO of Reliable Office Services" width="720" height="882">
+          <img src="images/yitzi.webp" alt="Yitzi Fellner, Founder and CEO of Reliable Office Services" width="720" height="910">
         </div>
         <div class="reveal">
           <p class="eyebrow">A message from our founder</p>
