@@ -251,7 +251,7 @@ CTA = f'''    <section class="cta-band">
 
 PACKAGES = [
     ("p-cyan", "Starter", "One service", "", "Start with the one thing you most want off your plate.", "pkg-1"),
-    ("p-lime", "Basic", "Two services", " featured", "Pair any two services, handled by the same team.", "pkg-2"),
+    ("p-lime", "Plus", "Two services", " featured", "Pair any two services, handled by the same team.", "pkg-2"),
     ("p-lav", "Premium", "All four services", "", "Reception, scheduling, customer service and data entry in one package.", "pkg-4"),
 ]
 
